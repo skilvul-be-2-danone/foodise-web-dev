@@ -8,10 +8,6 @@ hamburger.addEventListener("click", () => {
 
 const form = document.getElementById('form-login');
 
-// let login = async (email,password) => {
-
-// }
-
 form.addEventListener('submit', function(e) {
     // Prevent default behavior:
     e.preventDefault();
