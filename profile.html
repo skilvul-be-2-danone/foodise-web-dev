@@ -60,7 +60,7 @@
             hamburger.classList.toggle("active");
             menu.classList.toggle("active")
         })
-        
+
         let dataUserEmail = localStorage.getItem('Email')
         let dataUserNumber = localStorage.getItem('Number')
 
@@ -79,16 +79,12 @@
             </form>`
         }
 
-        // memanggil fungsi getSearchHistory
         if (dataUserEmail != null && dataUserNumber != null) {  
             getDataUser(); 
         }
 
         const form = document.getElementById('form-login');
 
-        // let login = async (email,password) => {
-
-        // }
 
         form.addEventListener('submit', function(e) {
             // Prevent default behavior:
