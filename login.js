@@ -19,7 +19,7 @@ async function GetLogin(email,number){
 	}
  
     const data = await response.json();
-    // const user = await data.filter(item => item.email === email && item.password === password);
+    
     const user = await data.find(d => d.email === email && d.number === number)
     if(user){
         localStorage.setItem("Email", user.email)
@@ -32,8 +32,7 @@ async function GetLogin(email,number){
         alert('Login Failed, Please Sign Up')
     }
 
-// emailElement.value = ""
-// passwordElement.value = ""
+
 }
 form.addEventListener('submit', function(e) {
     e.preventDefault()
