@@ -52,23 +52,3 @@ function generateHTML(results) {
         document.getElementById("search-result").appendChild(foodEl)
     })
 }
-
-// CHOCDF.net
-// : 
-// label
-// : 
-// "Carbohydrates (net)"
-// quantity
-// : 
-// 146.0206466247476
-// unit
-// : 
-// "g"
-
-// CHOLE
-
-// FAT
-
-// PROCNT
-
-// SUGAR
